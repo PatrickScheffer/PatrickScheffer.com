@@ -1,0 +1,14 @@
+name = Paragraphs
+description = Paragraphs module to control your content flow.
+core = 7.x
+
+dependencies[] = entity
+
+files[] = views/paragraphs_handler_relationship.inc
+
+; Information added by Drupal.org packaging script on 2014-03-31
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "paragraphs"
+datestamp = "1396274952"
+
