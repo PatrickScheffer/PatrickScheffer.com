@@ -186,6 +186,24 @@
   <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']  || $page['footer']): ?>
   <footer id="footer-bottom">
     <div id="footer-area" class="clearfix">
+
+      <ul id="footer-social" class="clearfix">
+        <li><a target="_blank" title="<?php print $site_name; ?> in LinkedIn" href="http://nl.linkedin.com/pub/patrick-scheffer/96/13b/64a/"><img alt="LinkedIn" src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/social/linkedin.png'; ?>"> </a></li>
+        <?php if ($facebook_url): ?><li>
+          <a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>"><img alt="Facebook" src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/social/facebook.png'; ?>"> </a>
+        </li><?php endif; ?>
+        <?php if ($twitter_url): ?><li>
+          <a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><img alt="Twitter" src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/social/twitter.png'; ?>"> </a>
+        </li><?php endif; ?>
+        <?php if ($google_plus_url): ?><li>
+          <a target="_blank" title="<?php print $site_name; ?> in Google+" href="<?php print $google_plus_url; ?>"><img alt="Google+" src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/social/google.png'; ?>"> </a>
+        </li><?php endif; ?>
+
+        <li>
+          <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"><img alt="RSS" src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/social/rss.png'; ?>"> </a>
+        </li>
+      </ul>
+
       <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
         <div id="footer-block-wrap" class="clearfix">
           <?php if($page['footer_first']): ?><div class="footer-block">
@@ -207,6 +225,6 @@
   <?php endif; ?>
 
   <div id="copyright">
-    <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>. <?php print t('Theme by'); ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>
+    <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>. <?php print t('Theme inspired by'); ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a>
   </div>
 </div>

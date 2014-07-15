@@ -868,6 +868,26 @@ h1.page-title {
   margin-bottom: 10px;
 }
 
+#footer-social{
+  float: right;
+  margin: 0;
+}
+#footer-social li {
+  float: left;
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#footer-social a,
+#footer-social img {
+  display: block;
+}
+
+#footer-social img:hover {
+  opacity: 0.6;
+}
+
 /*copyright*/
 #copyright {
   margin: 15px 0;
@@ -1441,3 +1461,20 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font-size: 16px;
 }
 
+/* custom edit */
+.home-blog-overview .views-row {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  color: #000000;
+}
+
+.paragraphs-item-text-with-image .field-name-field-content-image {
+  float: left;
+}
+
+.field-name-field-tags {
+  padding-top: 10px;
+  clear: both;
+}
